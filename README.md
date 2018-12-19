@@ -6,5 +6,18 @@ PHPUnit is a programmer-oriented testing framework for PHP. In this repository, 
 
 Installation:
 ================
-1) Clone repository - git clone https://github.com/kubatbekov/phpunit-example.git
-2) Install dependencies using composer - composer install
+
+Clone repository:
+```sh
+$ git clone https://github.com/kubatbekov/phpunit-example.git
+```
+
+Install dependencies using composer:
+```sh
+$ composer install
+```
+
+Run tests:
+```sh
+$ vendor/bin/phpunit tests
+```
