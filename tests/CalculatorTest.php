@@ -52,4 +52,16 @@ class CalculatorTest extends TestCase
 
         $this->assertEquals($expected, $result);
     }
+
+    /**
+     * Check value type
+     *
+     * @dataProvider addDataProvider
+     */
+    public function testAddFailure($a, $b)
+    {
+        $result = $this->calculator->add($a, $b);
+
+        $this->assertInternalType(PHPUnit_Framework_Constraint_IsType::TYPE_NUMERIC, $result);
+    }
 }
